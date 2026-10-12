@@ -1,5 +1,7 @@
 # coss-motion-audit
 
+Built to test a fix for coss ui: https://github.com/cosscom/coss/pull/864. The fix makes Dialog and Toast keep their fades and drop their movement when reduced motion is on.
+
 Measures what the [coss ui](https://coss.com/ui) enter/exit primitives animate when the user has asked for reduced motion (`prefers-reduced-motion: reduce`).
 
 It renders the components exactly as they are in a coss checkout, opens and closes each one in Chromium, and reads every running CSS transition and animation from `document.getAnimations()`. Nothing is inferred from class names. It also records where Dialog and Toast sit on every frame while they are visible, so a jump with no transition still shows up.
