@@ -1,0 +1,28 @@
+{
+  "name": "coss-motion-audit",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "prepare:coss": "node prepare.mjs",
+    "build": "vite build",
+    "measure": "node measure.mjs",
+    "shake": "node shake.mjs"
+  },
+  "dependencies": {
+    "@base-ui/react": "1.8.0",
+    "class-variance-authority": "0.7.1",
+    "clsx": "2.1.1",
+    "lucide-react": "0.555.0",
+    "react": "19.2.6",
+    "react-dom": "19.2.6",
+    "tailwind-merge": "3.4.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "4.1.17",
+    "@vitejs/plugin-react": "5.1.1",
+    "playwright": "1.56.0",
+    "tailwindcss": "4.1.17",
+    "typescript": "5.9.3",
+    "vite": "7.2.4"
+  }
+}
